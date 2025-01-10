@@ -53,8 +53,8 @@ api-calculator/
 ### Clone this repository:
 
 ```bash
-git clone git@github.com:illuminaki/nextjs-api-calculator.git
-cd api-calculator
+git clone https://github.com/illuminaki/nextjs-api-calculator.git
+cd next-js-api-calculator
 ```
 
 ### Build the Docker image:
