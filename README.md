@@ -53,7 +53,7 @@ api-calculator/
 ### Clone this repository:
 
 ```bash
-git clone https://github.com/your-repository/api-calculator.git
+git clone git@github.com:illuminaki/nextjs-api-calculator.git
 cd api-calculator
 ```
 
@@ -157,9 +157,4 @@ All dependencies are managed within Docker, so no additional installations are r
 
 - This project is designed for learning and experimentation with Next.js and Docker.
 - The application runs entirely inside the container, ensuring a consistent environment across different systems.
-- Future enhancements can include database integration or deployment in production environments.
-
 ---
-
-Enjoy exploring the power of Next.js and Docker!
-
