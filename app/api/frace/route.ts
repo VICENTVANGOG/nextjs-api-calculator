@@ -7,8 +7,18 @@ export async function GET(req: Request) {
   const generarFraseAleatoria = (): string => {
     const sujetoAleatorio = sujetos[Math.floor(Math.random() * sujetos.length)];
     const predicadoAleatorio = predicados[Math.floor(Math.random() * predicados.length)];
-    
-    return `${sujetoAleatorio} ${predicadoAleatorio}.`;
+
+    let sujetoModificado = sujetoAleatorio;
+    if (sujetoAleatorio.length > 8) {
+      sujetoModificado += " intelligent";
+    }
+
+    let predicadoModificado = predicadoAleatorio;
+    if (predicadoAleatorio.includes("coding")) {
+      predicadoModificado += "!";
+    }
+
+    return `${sujetoModificado} ${predicadoModificado}.`;
   };
   
   const fraseAleatoria = generarFraseAleatoria();
@@ -17,6 +27,3 @@ export async function GET(req: Request) {
     frase: fraseAleatoria
   });
 }
-
-
-
